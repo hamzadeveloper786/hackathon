@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+        <!-- icons cdn -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"></link>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Personl Blogging App</h1>
+    <form>
+        <h2>Login</h2>
+        <input type="text" class="login" name="fName" id="firstName" placeholder="First Name" required>
+        <br>
+        <br>
+        <input type="text" class="login" name="lName" id="lastName" placeholder="Last Name" required>
+        <br>
+        <br>
+        <input type="email" class="login" name="mail" id="email" placeholder="Email" required>
+        <br>
+        <br>
+        <input type="password" class="login" name="pass" id="password" placeholder="Password" required> <i class="bi bi-eye-slash" onclick="showPassword(event)"></i>
+        <br>
+        <br>
+        <input type="password" class="login" name="confirmPass" id="confirmPassword" placeholder="Confirm Password" required> <i class="bi bi-eye-slash" onclick="showPassword(event)"></i>
+        <br>
+        <br>
+        <button type="submit" onsubmit="submit(); return false">Login</button>
+    </form>
+    <p class="validationMessage"></p>
+    <span>Already a Member <a href="./signup.html">Sign Up</a></span>
+<!-- Other Firebase services can be imported here -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
